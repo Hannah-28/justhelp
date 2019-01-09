@@ -1,0 +1,126 @@
+body{
+    padding:0;
+    margin:0;
+    cursor: pointer;
+}
+header{
+    margin-top: -1.8em;
+    background-color: black
+}
+.logo{
+    font-size:1em;
+    font-family: Georgia;
+    padding-top:0.6em;
+    color:rgb(109, 109, 235);
+}
+.navlist{
+    list-style: none;
+    text-align: right;
+    margin-top: -3em;
+}
+li{
+    margin-left: 5em;
+    display: inline-block;
+    padding:0px 10px 5px;
+    font-family: Verdana;
+    font-size:1em;
+    color:white
+}
+li:hover::after{
+    content: "";
+    display: inline-block;
+    margin-bottom: 1px;
+    height: 3px;
+    background-color: rgba(128, 128, 128, 0.945);
+    width: 100%;
+    transition-duration: 20s;
+}
+@keyframes example{
+    0% {
+        color: #ff8490 
+    }
+    50%{
+        color: #fc62bd
+    }
+    100%{
+        color: #ff8940
+    }
+}
+li:hover{
+    animation-name: example;
+    animation-duration: 6s
+}
+.talk{
+    max-width:100%;
+    margin:0;
+    margin-top:-2.7em;
+    padding:0;
+    height:40em;
+    background-image: url(Online.jpg);
+    background-size: cover;
+    background-position: center;
+    text-align:center
+}
+.talk h1{
+    color:white;
+    font-family:serif;
+    font-size:4em;
+    padding-top:2em;
+}
+.talk p{
+    font-family: serif;
+    font-size: 2.5em;
+    color:white
+}
+input{
+    background-color: transparent;
+    color:white;
+    font-family: serif;
+    border: 2px solid blue;
+    padding: 10px 35px;
+    font-size: 1.3em;
+    cursor:pointer
+}
+input:hover{
+    color:black;
+    background-color:rgb(109, 109, 235);
+    border: 2px solid rgb(109, 109, 235);
+}
+.header{
+    font-family: Arial;
+    font-size: 1em;
+    border-right:2px solid pink;
+    border-bottom:2px solid pink;
+    width:400px;
+    text-align: center;
+    box-shadow: 4px 4px 5px #888888;
+    margin-top: 10px;
+    padding-top:4px;
+    color:#757070fb
+}
+.story{
+    margin-top: 3em;
+    font-family:cursive;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center
+}
+.story_1, .story_2, .story_3, .story_4, .story_5, .story_6{
+    max-width:400px;
+    background-color: #f9f9ff;
+    border:10px solid #f9f9ff;
+    margin: 1em
+}
+.story p{
+    line-height: 2em
+}
+footer{
+    color: #818181;
+    background: #000410;
+    height: 10em;
+    text-align: center;
+    max-width:100%;
+}
+footer p{
+    padding-top:5em
+}
